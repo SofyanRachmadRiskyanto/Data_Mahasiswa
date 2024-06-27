@@ -1,0 +1,44 @@
+package com.sofyan.gui;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Mydata extends JFrame {
+
+    private JPanel panelMain;
+    private JTextField textField1;
+    private JButton btnfilter;
+    private JTextField txtNama;
+    private JTextField txtNIM;
+    private JTextField txtIpk;
+    private JButton btnsave;
+    private JLabel lblNama;
+    private JList JlistMahasiswa;
+    private JButton btnSave;
+    private JButton btnClear;
+
+    List<Mahasiswa> ArrayListMahasiswa = new ArrayList<>();
+
+    class Mahasiswa {
+        public String getNama() {
+            return nama;
+        }
+
+        public void setNama(String nama) {
+            this.nama = nama;
+        }
+
+        public String getNim() {
+            return nim;
+        }
+
+        public void setNim(String nim) {
+            this.nim = nim;
+        }
+
+        public String getIpk() {
+            return ipk;
+        }
